@@ -1,28 +1,11 @@
-import './App.css'
+import Header from "./components/Header";
 
 function App() {
-
   return (
-    
-<>
- Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
+    <>
+      <Header />
     </>
-     
-
-  )
+  );
 }
 
-export default App
+export default App;
