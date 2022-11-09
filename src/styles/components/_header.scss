@@ -4,14 +4,9 @@
     height: 10rem;
     align-items: center;
     padding: 0 2rem;
+    background-color: $almostWhite;
 }
 
-@media (min-width:375px) {
-    .header {
-        padding: 0 5rem;
-    }
-
-}
 
 @media (min-width:968px) {
     .header {
@@ -20,25 +15,57 @@
 }
 
 
-.header__logo-nav {
+.header__nav-session {
+    position: absolute;
     display: flex;
-    align-items: center;
-    gap: 8rem;
+    flex-direction: column;
+    gap: 3rem;
+    height: 100%;
+    width: 25rem;
+    top: 0;
+    right: 0;
+    padding: 2rem;
+    background-color: $almostWhite;
+}
+
+@media (min-width:967px) {
+    .header__nav-session {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 10rem;
+    }
 }
 
 
-.header__session,
+.header__icon-close-menu {
+    height: 5rem;
+    display: flex;
+    justify-content: end;
+
+    img {
+        width: 2.6rem;
+        height: 2.6rem;
+        margin-top: 15px;
+    }
+}
+
+
+
 .nav {
-    display: none;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
 }
-
-
 
 @media (min-width:967px) {
 
-    .header__session,
     .nav {
         display: flex;
+        flex-direction: row;
         gap: 4rem;
     }
 }
@@ -55,20 +82,54 @@
     color: $mediumGray;
 }
 
+
+.header__session {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 968px) {
+    .header__session {
+        flex-direction: row;
+    }
+}
+
 .header__login,
 .header__register {
     text-decoration: none;
     color: $mediumGray;
-    padding: 1.2rem 2rem;
+    padding: 1rem 7rem;
 }
+
+@media (min-width:968px) {
+    .header__login {
+        padding: 1rem 2rem;
+
+    }
+
+    .header__register {
+        border: 1px solid $mediumGray;
+        border-radius: 1.4rem;
+        padding: 1rem 2rem;
+    }
+}
+
 
 .header__register {
     border: 1px solid $mediumGray;
     border-radius: 1.4rem;
 }
 
+
+
+
 @media (min-width:968px) {
     .header__icon-menu {
+        display: none;
+    }
+
+    .header__icon-close-menu {
         display: none;
     }
 }
