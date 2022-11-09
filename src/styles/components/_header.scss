@@ -1,5 +1,4 @@
 .header {
-    background-color: red;
     display: flex;
     justify-content: space-between;
     height: 10rem;
@@ -8,10 +7,68 @@
 }
 
 @media (min-width:375px) {
+    .header {
+        padding: 0 5rem;
+    }
 
+}
+
+@media (min-width:968px) {
+    .header {
+        padding: 0 5rem;
+    }
+}
+
+
+.header__logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+
+
+.header__session,
+.nav {
+    display: none;
+}
+
+
+
+@media (min-width:967px) {
 
     .header__session,
     .nav {
+        display: flex;
+        gap: 4rem;
+    }
+}
+
+.nav__item {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+
+.nav__item-a {
+    text-decoration: none;
+    color: $mediumGray;
+}
+
+.header__login,
+.header__register {
+    text-decoration: none;
+    color: $mediumGray;
+    padding: 1.2rem 2rem;
+}
+
+.header__register {
+    border: 1px solid $mediumGray;
+    border-radius: 1.4rem;
+}
+
+@media (min-width:968px) {
+    .header__icon-menu {
         display: none;
     }
 }
