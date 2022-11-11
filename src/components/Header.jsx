@@ -13,7 +13,7 @@ function Header() {
       <div>
         <img src={Logo} alt="logo-snap" />
       </div>
-      <div className="header__nav-session active">
+      <div className="header__nav-session">
         <div className="header__icon-close-menu">
           <img src={IconCloseMenu} alt="icon-close-menu" />
         </div>
