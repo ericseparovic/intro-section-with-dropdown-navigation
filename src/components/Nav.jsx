@@ -8,11 +8,25 @@ import IconPlanning from "../assets/images/icon-planning.svg";
 
 function Nav() {
   const handleNav = (e) => {
-    console.log(e.target);
     const nav = document.querySelector(".header__nav-session");
     const opacity = document.querySelector(".bg-opacity");
     nav.classList.toggle("active");
     opacity.classList.toggle("opacity");
+  };
+
+  const handleSubNav = (e) => {
+    const subNavFeatures = document.querySelector("#sub-nav-features");
+    const subNavCompany = document.querySelector("#sub-nav-company");
+
+    if (e.target.id == "nav-features") {
+      subNavFeatures.classList.toggle("sub-nav-active");
+      subNavCompany.classList.add("sub-nav-active");
+    }
+
+    if (e.target.id == "nav-company") {
+      subNavCompany.classList.toggle("sub-nav-active");
+      subNavFeatures.classList.add("sub-nav-active");
+    }
   };
 
   return (
@@ -21,15 +35,18 @@ function Nav() {
         <div className="header__icon-close-menu" onClick={handleNav}>
           <img src={IconCloseMenu} alt="icon-close-menu" />
         </div>
-        <nav className="nav">
+        <nav onClick={handleSubNav} className="nav">
           <div>
             <div className="nav__item">
-              <a className="nav__item-a" href="#">
+              <a id="nav-features" className="nav__item-a" href="#">
                 Features
               </a>
               <img src={IconArrowDown} alt="icon-arrow-down" />
             </div>
-            <div className="sub-nav sub-nav__features--position">
+            <div
+              className="sub-nav sub-nav__features--position sub-nav-active"
+              id="sub-nav-features"
+            >
               <div className="sub-nav__item">
                 <img src={IconTodoList} alt="icon-todo" />
                 <a className="sub-nav__item-a" href="#">
@@ -58,12 +75,15 @@ function Nav() {
           </div>
           <div>
             <div className="nav__item">
-              <a className="nav__item-a" href="#">
+              <a id="nav-company" className="nav__item-a" href="#">
                 Company
               </a>
               <img src={IconArrowDown} alt="icon-arrow-down" />
             </div>
-            <div className="sub-nav sub-nav__company--position">
+            <div
+              id="sub-nav-company"
+              className="sub-nav sub-nav__company--position sub-nav-active"
+            >
               <a className="sub-nav__item-a" href="#">
                 History
               </a>
