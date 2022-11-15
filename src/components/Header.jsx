@@ -8,13 +8,19 @@ import IconReminders from "../assets/images/icon-reminders.svg";
 import IconPlanning from "../assets/images/icon-planning.svg";
 
 function Header() {
+  const handleNav = (e) => {
+    console.log(e.target);
+    const nav = document.querySelector(".header__nav-session");
+    nav.classList.toggle("active");
+  };
+
   return (
     <header className="header">
       <div>
         <img src={Logo} alt="logo-snap" />
       </div>
       <div className="header__nav-session">
-        <div className="header__icon-close-menu">
+        <div className="header__icon-close-menu" onClick={handleNav}>
           <img src={IconCloseMenu} alt="icon-close-menu" />
         </div>
         <nav className="nav">
@@ -88,7 +94,7 @@ function Header() {
           </a>
         </div>
       </div>
-      <div className="header__icon-menu">
+      <div className="header__icon-menu" onClick={handleNav}>
         <img src={IconMenu} alt="icon-menu" />
       </div>
     </header>

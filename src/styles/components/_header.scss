@@ -26,6 +26,7 @@
     right: -25rem;
     padding: 2rem;
     background-color: $almostWhite;
+    transition: all 300ms;
 }
 
 @media (min-width:967px) {
@@ -126,6 +127,9 @@
 
 
 
+.header__icon-menu {
+    cursor: pointer;
+}
 
 @media (min-width:968px) {
     .header__icon-menu {
