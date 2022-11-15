@@ -6,6 +6,8 @@ function Main() {
     <main className="main">
       <Hero />
       <Information />
+
+      <div className="bg-opacity"></div>
     </main>
   );
 }

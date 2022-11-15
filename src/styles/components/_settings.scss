@@ -33,3 +33,21 @@ img {
     max-width: 100%;
     display: block;
 }
+
+
+@media (min-width:968px) {
+    .bg-opacity {
+        display: none;
+    }
+
+}
+
+.opacity {
+    height: calc(100% + 10rem);
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.665);
+    top: 0;
+    left: -25rem;
+    transition: all 1500ms;
+}

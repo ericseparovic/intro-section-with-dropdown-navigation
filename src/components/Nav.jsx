@@ -10,7 +10,9 @@ function Nav() {
   const handleNav = (e) => {
     console.log(e.target);
     const nav = document.querySelector(".header__nav-session");
+    const opacity = document.querySelector(".bg-opacity");
     nav.classList.toggle("active");
+    opacity.classList.toggle("opacity");
   };
 
   return (
