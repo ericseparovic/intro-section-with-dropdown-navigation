@@ -100,20 +100,20 @@
     }
 }
 
-.header__login,
-.header__register {
+.header__btn-login,
+.header__btn-register {
     text-decoration: none;
     color: $mediumGray;
     padding: 1rem 7rem;
 }
 
 @media (min-width:968px) {
-    .header__login {
+    .header__btn-login {
         padding: 1rem 2rem;
 
     }
 
-    .header__register {
+    .header__btn-register {
         border: 1px solid $mediumGray;
         border-radius: 1.4rem;
         padding: 1rem 2rem;
@@ -121,9 +121,15 @@
 }
 
 
-.header__register {
+.header__btn-register {
     border: 1px solid $mediumGray;
     border-radius: 1.4rem;
+    transform: all 300ms;
+
+
+    &:hover {
+        border: 1.5px solid $almostBlack;
+    }
 }
 
 
