@@ -104,10 +104,10 @@ function Nav() {
         </nav>
 
         <div className="header__session">
-          <a className="header__login" href="#">
+          <a className="header__btn-login" href="#">
             Login
           </a>
-          <a className="header__register" href="#">
+          <a className="header__btn-register" href="#">
             Register
           </a>
         </div>
