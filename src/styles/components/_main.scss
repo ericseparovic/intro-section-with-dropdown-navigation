@@ -67,7 +67,7 @@
         justify-content: space-between;
         padding: 2rem 15rem 0 0;
         height: 60rem;
-
+        align-items: flex-startj;
     }
 
     .main__hero {
@@ -81,7 +81,7 @@
 
 .main__info-h1 {
     font-size: 3.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
 }
 
 @media (min-width:750px) {
@@ -89,6 +89,8 @@
 
         font-size: 6rem;
         margin-top: 10rem;
+        padding: 0;
+
     }
 }
 
