@@ -89,10 +89,19 @@
 
         font-size: 6rem;
         margin-top: 10rem;
-        padding: 0;
 
     }
 }
+
+
+@media (min-width:986px) {
+
+    .main__info-h1 {
+        width: 37rem;
+    }
+}
+
+
 
 .main__info-p {
     line-height: 3rem;
